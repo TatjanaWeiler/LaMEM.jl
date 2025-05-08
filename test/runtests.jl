@@ -12,6 +12,8 @@ using LaMEM
     include("test_compression.jl")
     include("test_GeoParams_integration.jl")
     include("test_examples.jl")
+    include("test_LaMEM_post_processing.jl")
+    #include("test_lamem.jl")
 
 end
 
