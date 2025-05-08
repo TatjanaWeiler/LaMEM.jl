@@ -29,7 +29,7 @@ Base.@kwdef mutable struct FreeSurface
     surf_topo_file::String      = ""                
 
     "erosion model [0-none (default), 1-infinitely fast, 2-prescribed rate with given level]"
-    erosion_model::Int64        = 2                 
+    erosion_model::Int64        = 0                 
 
     "number of erosion phases"
     er_num_phases::Int64        = 3                 
@@ -44,7 +44,7 @@ Base.@kwdef mutable struct FreeSurface
     er_levels::Vector{Int64}    = [1,   2,   1]     
 
     "sedimentation model [0-none (dafault), 1-prescribed rate with given level, 2-cont. margin]"
-    sediment_model::Int64       = 1                 
+    sediment_model::Int64       = 0                 
 
     "number of sediment layers"
     sed_num_layers::Int64       = 3                 
